@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disk Scheduling Visualizer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>HDD SCHEDULING SIMULATOR</h1>
+    <div id="controls">
+        <label for="request-sequence">Enter Request Sequence (comma separated):</label>
+        <input type="text" id="request-sequence" placeholder="e.g., 98, 183, 37, 122, 14">
+        <label for="start-position">Enter Starting Position:</label>
+        <input type="number" id="start-position" placeholder="e.g., 50">
+        <label for="algorithm">Select Algorithm:</label>
+        <select id="algorithm">
+            <option value="fcfs">FCFS</option>
+            <option value="sstf">SSTF</option>
+            <option value="scan">SCAN</option>
+            <option value="cscan">C-SCAN</option>
+            <option value="look">LOOK</option>
+            <option value="clook">C-LOOK</option>
+        </select>
+        <button id="simulate">Simulate</button>
+    </div>
+    <h2>Simulation Output</h2>
+    <div id="output">
+        <canvas id="simulationCanvas" width="800" height="600"></canvas>
+    </div>
+    <div id="total-seek-time-container">
+        <div id="total-seek-time"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

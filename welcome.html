@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome Page</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            background:  url('https://www.agarum.com/photos/1/1/8/251/c/l/a35a93f95c9a649ef98b69f73fb80a53.jpg') no-repeat center center fixed;
+            background-size: cover;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: white;
+        }
+        .container {
+            max-width: 800px;
+            background: rgba(0, 0, 0, 0.5);
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 0 30px rgba(0, 0, 0, 0.4);
+            text-align: center;
+            backdrop-filter: blur(15px);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .container:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 40px rgba(0, 0, 0, 0.6);
+        }
+        h1 {
+            color: #ffdd57;
+            font-size: 3em;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        h2 {
+            color: #ffd700;
+            margin-top: 30px;
+            font-size: 2em;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        h3 {
+            color: #ffdead;
+            margin-top: 10px;
+            font-size: 1.5em;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        p {
+            color: #ffffff;
+            line-height: 1.8;
+            margin: 10px 0;
+            font-size: 1.2em;
+        }
+        a {
+            color: #00d2ff;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1em;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        button {
+            background-color: #ffdd57;
+            color: #000;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 1.2em;
+            margin-top: 20px;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+        button:hover {
+            background-color: #ffd700;
+            transform: translateY(-3px);
+        }
+        .team {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .team-member {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .team-member:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+        }
+        .team-member h3 {
+            margin: 0;
+            font-size: 1.2em;
+            color: #fff;
+        }
+        .team-member p {
+            font-size: 1em;
+            color: #e0e0e0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>HDD Scheduling System</h1>
+        <p>Welcome to the HDD scheduling system. Explore various scheduling algorithms including FCFS, SSTF, SCAN, C-SCAN, LOOK, and C-LOOK.</p>
+        
+        <h2>Developed By:</h2>
+        <div class="team">
+            <div class="team-member">
+                <h3>KESAVA PRABHA L</h3>
+                <p>Developer</p>
+            </div>
+            <div class="team-member">
+                <h3>LAKSHANA V</h3>
+                <p>Developer</p>
+            </div>
+            <div class="team-member">
+                <h3>KAVIARASU R P</h3>
+                <p>Developer</p>
+            </div>
+        </div>
+        
+        <h3>KONGU ENGINEERING COLLEGE</h3>
+        <h3>DEPARTMENT OF COMPUTER SCIENCE AND ENGINEERING</h3>
+        
+        <p><a href="index(1).html">CLICK HERE FOR HDD SCHEDULING CALCULATOR</a></p>
+    </div>
+</body>
+</html>
